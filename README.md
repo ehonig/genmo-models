@@ -17,9 +17,10 @@ Install using [uv](https://github.com/astral-sh/uv):
 git clone https://github.com/genmoai/models
 cd models 
 pip install uv
+export PATH="${HOME}/.local/bin:$PATH" # add uv to PATH
 uv venv .venv
 source .venv/bin/activate
-uv pip install -e . --no-build-isolation
+bash install.sh
 ```
 
 ## Download Weights
